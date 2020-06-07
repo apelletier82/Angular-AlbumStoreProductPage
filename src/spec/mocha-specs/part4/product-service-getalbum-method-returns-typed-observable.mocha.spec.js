@@ -27,10 +27,10 @@ describe('ProductService getAlbum Method', function () {
     
     let the_type = match[1].trim();
 
-    let re2 = /\s*\:\s*Observable\<Album\>/
+    let re2 = /\s*\:\s*Observable\<AlbumInfo\>/
     let match2 = the_type.match(re2);
 
     assert(Array.isArray(match2), "The `getAlbum` method doesn't have the correct return type.")
-    assert(match2[0].includes('Observable<Album>'), "The `getAlbum` method doesn't have the correct return type.")
+    assert(match2[0].includes('Observable<AlbumInfo>'), "The `getAlbum` method doesn't have the correct return type.")
   });
 });
